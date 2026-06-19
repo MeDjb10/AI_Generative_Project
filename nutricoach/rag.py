@@ -88,7 +88,7 @@ Answer clearly and mention that this is general information, not medical advice.
 if __name__ == "__main__":
     import sys
 
-    question = "What foods are good for lowering cholesterol?"
+    question = "What's the best way to lose weight?"
 
     # STAGE 1: retrieval only — prove your search works before touching the LLM.
     if "--retrieve" in sys.argv:
