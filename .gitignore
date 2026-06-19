@@ -1,0 +1,22 @@
+# Secrets — NEVER commit
+.env
+
+# Virtual environment
+venv/
+
+# Generated vector database (rebuild with ingest.py)
+chroma_db/
+
+# Source PDFs/corpus — too large for git; re-download to data/ then run ingest.py
+data/
+
+# Exports / scratch files
+chroma_export.csv
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS / editor junk
+.DS_Store
+.vscode/

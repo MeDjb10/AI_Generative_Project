@@ -2,6 +2,7 @@ groq
 chromadb
 sentence-transformers
 pypdf
+cryptography
 requests
 python-dotenv
 streamlit
