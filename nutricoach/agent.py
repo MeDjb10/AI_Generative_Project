@@ -68,9 +68,14 @@ def decide(question):
                 "reasoning": "Could not parse decision, defaulting to RAG."}
 
 
-def run(question):
-    """Orchestration: decide, show reasoning, run the chosen route, return answer."""
-    decision = decide(question)
+def run(question, decision=None):
+    """Orchestration: decide, show reasoning, run the chosen route, return answer.
+
+    Pass a pre-computed `decision` to reuse one decision (e.g. the web UI shows
+    the reasoning first, then reuses the same decision to run the route).
+    """
+    if decision is None:
+        decision = decide(question)
     action = decision.get("action", "rag")
 
     # Printing the reasoning is the "explain its decisions" requirement.
