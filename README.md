@@ -7,7 +7,7 @@
 
 ---
 
-## 0. Read this first (what you are building, in plain words)
+## 0. Read this first
 
 You are building an app where a person types a health or nutrition question, and the
 app figures out **how** to answer it. That "figures out how" is the *agent*.
